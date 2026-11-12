@@ -1,0 +1,13 @@
+[Version]
+Version=15.0
+[Designs]
+debugExercise=debugExercise.adf
+[Settings]
+Active=debugExercise
+[Expand]
+debugexercise=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1

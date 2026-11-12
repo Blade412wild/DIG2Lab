@@ -1,0 +1,70 @@
+============================================================
+  Testbench Report for ch02_exc02_1_when_right
+  Date: 2026-03-10
+============================================================
+
+Test #1: Select 00 - Output all zeros
+  Inputs: a=10101010, b=11110000, sel=00
+  Expected: 00000000, Got: 00000000
+  Result: PASS
+
+Test #2: Select 01 - Output input a
+  Inputs: a=10101010, b=11110000, sel=01
+  Expected: 10101010, Got: 10101010
+  Result: PASS
+
+Test #3: Select 01 - Output input a (different value)
+  Inputs: a=11001100, b=11110000, sel=01
+  Expected: 11001100, Got: 11001100
+  Result: PASS
+
+Test #4: Select 10 - Output input b
+  Inputs: a=10101010, b=11110000, sel=10
+  Expected: 11110000, Got: 11110000
+  Result: PASS
+
+Test #5: Select 10 - Output input b (different value)
+  Inputs: a=10101010, b=00110011, sel=10
+  Expected: 00110011, Got: 00110011
+  Result: PASS
+
+Test #6: Select 11 - Output high impedance
+  Inputs: a=10101010, b=11110000, sel=11
+  Expected: ZZZZZZZZ, Got: ZZZZZZZZ
+  Result: PASS
+
+Test #7: Select 01 - Input a all zeros
+  Inputs: a=00000000, b=11111111, sel=01
+  Expected: 00000000, Got: 00000000
+  Result: PASS
+
+Test #8: Select 01 - Input a all ones
+  Inputs: a=11111111, b=00000000, sel=01
+  Expected: 11111111, Got: 11111111
+  Result: PASS
+
+Test #9: Select 10 - Input b all zeros
+  Inputs: a=11111111, b=00000000, sel=10
+  Expected: 00000000, Got: 00000000
+  Result: PASS
+
+Test #10: Select 10 - Input b all ones
+  Inputs: a=00000000, b=11111111, sel=10
+  Expected: 11111111, Got: 11111111
+  Result: PASS
+
+============================================================
+  Test Summary
+============================================================
+  Total Tests:  10
+  Passed:       10
+  Failed:       0
+  Status:       ALL TESTS PASSED
+
+Coverage Analysis:
+  - sel='00' case: Covered
+  - sel='01' case: Covered (multiple values tested)
+  - sel='10' case: Covered (multiple values tested)
+  - sel='11' case: Covered
+  Coverage: 100%
+============================================================

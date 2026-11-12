@@ -1,0 +1,85 @@
+# VHDL/FPGA Project .gitignore
+# Generated for Intel Quartus and GHDL projects
+
+# Quartus compilation and synthesis outputs
+db/
+incremental_db/
+output_files/
+simulation/
+
+# Quartus workspace and temporary files
+*.qws
+*.bak
+*.rpt
+*.summary
+*.smsg
+*.done
+*.chg
+
+# GHDL compilation artifacts
+*.o
+*.cf
+work-obj*.cf
+*_tb
+*_tb.exe
+*.ghw
+*.vcd
+
+# Test and simulation outputs
+test_report.txt
+*.log
+*.txt.bak
+
+# Pin assignment and timing files (usually auto-generated)
+*.pin
+*.sof
+*.pof
+*.jdi
+*.stp
+*.qar
+
+# Timing analyzer outputs
+*.sta.summary
+*.sta.rpt
+
+# Programming files (bitstreams)
+*.sof
+*.pof
+*.rbf
+*.jic
+
+# ModelSim/QuestaSim files
+work/
+*.wlf
+*.vstf
+*.wlft
+transcript
+*.mpf
+vsim.wlf
+
+# Python bytecode (if using Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor specific
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Keep these source files (examples of what to track)
+# *.vhd
+# *.v
+# *.sv
+# *.qpf
+# *.qsf
+# *.tcl
+# *.sdc
+# *.qdf
